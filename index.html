@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SNDS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/snds.png">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="jumbotron bg-light">
+        <div class="row align-items-center">
+            <div style="text-align:center;" class="col-md-3">
+                <img src="img/snds.png" class="rounded"  height="150px">
+            </div>
+            <div class="col-md-6">
+                <h1>Welcome</h1>
+                <p>This is the home page of the <strong>Secure Named Data Sharing (SNDS)</strong> project.</p>
+                <p>The SNDS project is funded by <strong>NGI SARGASSO</strong>. 
+                </p>
+            </div>
+            <div style="text-align:center;" class="col-md-3">
+                <a href="https://ngisargasso.eu"><img src="img/logo-ngi-sargasso.png" class="img-fluid"></a>
+            </div>
+        </div>
+      </div>
+
+        <div class="row p-3">
+          <h2>About</h2>
+          <p>
+            SNDS is set to revolutionize the Named-Data Networking (NDN) ICN architecture by introducing extensions 
+            tailored for query-based content retrieval, fine-grained storage, and content updates—creating an optimal foundation for a 
+            Content Delivery Network (CDN) underlay. Prioritizing data security, SNDS will integrate innovations from our previous work on
+             Digital Identities, ensuring content security and privacy without compromising content authentication, integrity, or access control. 
+             Unlike traditional ICN architectures, SNDS' enhancements to NDN will facilitate advanced data sharing, including data encoding 
+             following specific models, fine-grained data retrieval, and temporally-defined data access. The project also boasts features 
+             like decentralized content integrity and authenticity through Digital Identifiers, especially the Decentralized Identifiers, 
+             complemented by BBS+ digital signatures which support Zero-Knowledge Proofs, offering a trust mechanism superior to NDN's PKI-based scheme. 
+             SNDS further plans to refine content storage operations by content producers, transitioning from NDN's existing system and 
+             propelling data sovereignty. These novel operations, scheduled for testing on the global NDN testbed—a collaboration between 
+             AUEB and UM—aim to cultivate interoperability based on the NDN framework. 
+             Through SNDS, the vision is a global CDN-inspired infrastructure utilizing NDN, resonating with the objectives of the NGI initiative, 
+             thereby pioneering a forward-thinking, human-centric Next Generation Internet. With the joint expertise of EU's AUEB and US's UM teams, 
+             SNDS endeavors to redefine the digital content landscape, emphasizing content identification, security, and verifiable credentials. 
+          </p> 
+        </div>
+
+        <div class="row p-3">
+          <h2>SNDS Design Overview</h2>
+          <p>
+            The SNDS architecture introduces a sophisticated networking platform where Next Generation technologies 
+            are exploited in order to enhance the quality and quantity of services offered by CDNs.
+            An overview of the SNDS design and the technologies that compose the SNDS ecosystem are presented in the following figure. 
+          </p>
+          <img src="img/snds_arch.jpg" class="img-fluid" style="width: 80%; height: auto;">
+          <p>
+            For clarity of purposes and without loss of generality, the figure assumes
+            a simple topology of two IP-based end-users: a content consumer, who requests a piece of information, and a content provider,
+            who supplies a piece of information. The two end-users transfer content through the NDN-based CDN network. 
+            The design proposes an incremental deployment scheme where the core CDN network is NDN-enabled and the end-users are in typical 
+            IP-based networks. The interfacing of the two networks takes place at the NDN edge routers, which also host the SNDS service.
+          </p>
+          <p>  
+            The SNDS service is the cornerstone of the SNDS architecture. First, it performs proxying duties; it receives, translates, 
+            and forwards requests from the IP end-users to the NDN core network and vice versa. Second, it supports the <strong>NGSI-LD API</strong>, 
+            thus being able to serve the NGSI-LD requests sent by the end-users. Third, it dynamically creates, relocates, or removes individual 
+            <strong>Digital Twins (DTs)</strong> per content provider, therefore assisting provider mobility and information updates. 
+            Fourth, it incorporates the required security methods, namely, <strong>Decentralized Identifiers (DIDs)</strong>, 
+            <strong>Verifiable Credentials (VCs)</strong>, and <strong>BBS+ signtures</strong>. 
+          </p>
+        </div>
+
+        <div class="row p-3">
+          <h2>News</h2>
+          <ul class="m-3">
+            <li><b>28 June 2024</b> Poster <a href="https://mm.aueb.gr/publications/39796fc6-956c-4a2f-b688-40fc4706e0ed.pdf">Named Data Networking for Data Spaces</a> presented at ISCC 2024 Conference</li>
+            <li><b>26 June 2024</b> Paper <a href="https://mm.aueb.gr/publications/d9d517c1-3b3c-4cab-b5e4-1ae4d5616e20.pdf">Certificate Management for Cloud-Hosted Digital Twins</a> presented at MoCS 2024 Workshop</li>
+            <li><b>22 Apr. 2024</b> Paper <a href="https://mm.aueb.gr/publications/bfabe6f6-468c-4f09-99da-547d78740c40.pdf">Data integrity protection for data spaces</a> presented at EuroSec 2024 Workshop</li>
+            <li><b>14 Mar. 2024</b> Presentation to Distributed Systems Group, TU Wien</li>
+            <li><b>28 Feb. 2024</b> Presentation to High Performance Networks Group, Bristol University</li>
+            <li><b>09 Feb. 2024</b> Presentation to Networking group, Bristol University</li>
+            <li><b>06 Feb. 2024</b> Presentation to Cybersecurity group at TU Delft</li>
+            <li><b>19 Jan. 2024</b> Presentation to Business Analytics at AUEB</li>
+            <li><b>17 Jan. 2024</b> Presentation to Networks group, Sussex University</li>
+            <li><b>29 Dec. 2023</b> Presentation to Infostrada Communications</li>
+            <li><b>05 Dec. 2023</b> Presentation to MMLAB</li>
+            <li><b>04 Dec. 2023</b> Presentation to I-SENSE/ICCS</li>
+          </ul>
+        </div>
+
+        <div class="row p-3">
+          <h2>SNDS presentation</h2>
+        <object data="media/SNDS NGI Sargasso Pitch.pdf" type="application/pdf" width="100%" height="500px"></object>
+        </div>
+
+      <div class="row p-3">
+          <h2>SNDS poster (from ISCC 2024)</h2>
+        <object data="media/SNDS_poster.pdf" type="application/pdf" width="100%" height="500px"></object>
+        </div>
+      
+        <div class="row p-3">
+          <h2>SNDS security architecture presentation (from EuroSec 2024)</h2>
+        <object data="media/snds-sec.pdf" type="application/pdf" width="100%" height="500px"></object>
+        </div>
+
+       <div class="row p-3">
+          <h2>SNDS digital twins presentation (from MoCS 2024)</h2>
+        <object data="media/2024-MoCS.pdf" type="application/pdf" width="100%" height="500px"></object>
+        </div>
+
+        
+        <div class="row p-3 justify-content-md-center">
+          <h2>The SNDS team</h2>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card h-100">
+              <img src="img/aueb.png" class="mt-3 mx-auto" alt="AUEB logo" height="75">
+              <div class="card-body">
+                <a href="https://aueb.gr/"><h5 class="card-title">Athens University of Economics and Business</h5></a>
+                <p class="card-text">AUEB participates through the <a href="https://mm.aueb.gr/">Mobile Multimedia Laboratory</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card h-100">
+              <img src="img/uom.png" class="mt-3 mx-auto" alt="UOM logo" width="200" height="75">
+              <div class="card-body"> 
+                <a href="https://www.memphis.edu/"><h5 class="card-title">University of Memphis</h5></a>
+                <p class="card-text">The University of Memphis. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="container border-top py-5 my-5">
+        <div class="row">
+          <div class="col-md-8 text-center">
+            <p>&copy; 2024 The SNDS consortium. All rights reserved.</p>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="https://www.ngi.eu/"><img src="img/NGI_Funded by_rgb.jpg" class="img-fluid"></a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
